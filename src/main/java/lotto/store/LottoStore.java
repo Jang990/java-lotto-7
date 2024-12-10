@@ -22,7 +22,7 @@ public class LottoStore {
             throw new IllegalArgumentException(LOTTO_MONEY_ERROR);
 
         int cnt = money / LOTTO_PRICE;
-        return new LottoBuyer(generate(cnt));
+        return new LottoBuyer(money, generate(cnt));
     }
 
     private List<Lotto> generate(int cnt) {

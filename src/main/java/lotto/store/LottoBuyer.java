@@ -5,9 +5,11 @@ import lotto.generator.Lotto;
 import java.util.List;
 
 public class LottoBuyer {
+    private final int seedMoney;
     private final List<Lotto> values;
 
-    public LottoBuyer(List<Lotto> values) {
+    public LottoBuyer(int seedMoney, List<Lotto> values) {
+        this.seedMoney = seedMoney;
         this.values = values;
     }
 

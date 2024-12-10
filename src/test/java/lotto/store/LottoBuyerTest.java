@@ -20,7 +20,7 @@ class LottoBuyerTest {
                 2개를 구매했습니다.
                 [1, 2, 3, 4, 5, 6]
                 [2, 3, 4, 5, 6, 7]
-                """, new LottoBuyer(lottos).toString());
+                """, new LottoBuyer(2_000, lottos).toString());
     }
 
 }
