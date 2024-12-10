@@ -1,6 +1,6 @@
 package lotto.winner;
 
-public enum LottoResult {
+public enum LottoRank {
     FIRST(2_000_000_000, 6, false),
     SECOND(30_000_000, 5,true),
     THIRD(1_500_000,5,false),
@@ -12,7 +12,7 @@ public enum LottoResult {
     public final Integer correct;
     public final Boolean bonus;
 
-    LottoResult(int price, Integer correct, Boolean bonus) {
+    LottoRank(int price, Integer correct, Boolean bonus) {
         this.price = price;
         this.correct = correct;
         this.bonus = bonus;

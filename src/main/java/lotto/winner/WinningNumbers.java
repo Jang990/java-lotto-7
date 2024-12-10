@@ -11,18 +11,18 @@ public class WinningNumbers {
         this.bonusNumber = bonusNumber;
     }
 
-    public LottoResult result(Lotto lotto) {
+    public LottoRank rank(Lotto lotto) {
         int containsNumber = winningLotto.countContainsNumber(lotto);
         boolean hasBonusNumber = lotto.contains(bonusNumber);
 
-        for (LottoResult result : LottoResult.values()) {
-            if(result.equals(LottoResult.FAIL)) continue;
+        for (LottoRank result : LottoRank.values()) {
+            if(result.equals(LottoRank.FAIL)) continue;
 
             if(containsNumber == result.correct
                     && hasBonusNumber == result.bonus)
                 return result;
         }
 
-        return LottoResult.FAIL;
+        return LottoRank.FAIL;
     }
 }
